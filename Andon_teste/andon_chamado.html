@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="andon_chamado.css">
+    <title>PMP - andon</title>
+</head>
+<body>
+    <button class="btn_click" onclick="showPopup()">Click Aqui</button>
+    
+    <div class="pop_up" id="pop_up">
+        <div class="popup-conteudo">
+            <span onclick="hidePopup()">&times;</span>
+            
+            <h1>Chamado</h1>
+            <div class="lado_esquerdo">
+                <input value="" placeholder="Processo" class="processo">
+                <p><input value="" placeholder="BiW" class="biw"></p>
+                <p><input value="" placeholder="Data" class="data"></p>
+                <p><input value="" placeholder="yyyy-MM-dd / HH:mm:ss" class="data"></p>
+            </div>
+            <div class="lado_direito">
+                <input value="" placeholder="Linha" class="linha">
+                <select name="" id="" class="select_entradas">
+                <option selected disabled hidden value="nenhum">Entradas</option>  
+                    <optgroup label="Floors"></optgroup>
+                        <option value="floor_left">Floor Left</option>
+                        <option value="floor_right">Floor Right</option>
+                        <option value="floor_complete">Floor Complete</option>
+                    <optgroup label="Roof"></optgroup>
+                        <option value="roof">Roof</option>
+                    <optgroup label="Sides"></optgroup>
+                        <option value="side_left">Side Left</option>
+                        <option value="side_right">Side Right</option>
+                    <optgroup label="Wall"></optgroup>
+                        <option value="rear_wall">Rear Wall</option>
+                        <option value="front_wall">Front Wall</option>
+                    <optgroup label="Doors"></optgroup>
+                        <option value="door_left">Door Left</option>
+                        <option value="door_right">Door Right</option>
+                    <optgroup label="Frame"></optgroup>
+                        <option value="main_frame1">Main Frame 01</option>
+                        <option value="main_frame2">Main Frame 02</option>
+                        <option value="main_frame3">Main Frame 03</option>
+                <input value="" placeholder="Turno" class="turno">
+                <input value="" placeholder="Turno" class="turno">
+            </div>
+        
+            <p><select name="" id="" class="possiveis_andons"></p>
+                <optgroup>
+                    <option value="">Possíveis Andons</option>
+                    <option value="">Teste 1</option>
+                    <option value="">Teste 2</option>
+                </optgroup>
+                <optgroup>
+                    <option value="">Teste 3</option>
+                    <option value="">Teste 4</option>
+                    <option value="">Teste 5</option>
+                </optgroup>
+            </select>
+            <p><input type="text" name="" id="" class="comentarios"></p>
+        
+            <div class="botao_chamar">
+            <input type="button" value="Enviar" class="conteudo_chamar">
+            </div>
+        </div>
+    </div>  
+    <script src="andon_chamado.js"></script>
+</body>
+</html>
+
