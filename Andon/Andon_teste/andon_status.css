@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Scania Sans";
+    font-weight: normal;
+    src: url(Fontes/ScaniaSansCY-Regular.eot);
+    src: url(Fontes/ScaniaSansCY-Regular.eot) format("embedded-opentype"), url(Fontes/ScaniaSansCY-Regular.woff2) format("woff2"),
+        url(Fontes/ScaniaSansCY-Regular.woff) format("woff"), url(Fontes/ScaniaSansCY-Regular.ttf) format("truetype");
+    unicode-range: U+0400-04FF;
+}
+
+*{
+    margin:  0px;
+    padding: 0px;
+    font-family: "Scania Sans" ;
+    color: #041E42;
+    
+}
+
+html,body{
+    height: 100%; /*Para centralizar a Tela*/
+    display: flex; /*Para centralizar a Tela*/
+    justify-content: center; /*Para centralizar a Tela*/
+    align-items: center; /*Para centralizar a Tela*/
+    background-color: #EDEDED;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Scania Sans" ;
+    font-weight: bold;
+    color: #041E42;
+}
+
+.conteudo{ /*Fundo da caixa*/
+    background-color: white;
+    padding: 10px;
+    max-width: 380px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    max-height: 100vh; /* Isso define a altura máxima em relação à altura da tela */;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo seja muito grande para caber na tela */
+}
+
+.btn_cancelar { /*conteudo dentro do botão de cancelar*/
+    margin: 0px 10px 10px 0px;
+    width: 380px;
+    padding: 10px;  
+    font-family: "Scania Sans";
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    border: 2px solid red; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn_cancelar:hover{
+    background-color: red;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.status{ /*configurações de possíveis andons*/
+    text-align: center;
+    padding: 10px;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+.status:hover{
+    cursor: pointer;
+}
+
+.comentarios{ /*caixa de comentários*/
+    height: 200px;
+    width: 376px;
+    text-align: center;
+}
