@@ -71,14 +71,14 @@ h1{
     width: 183px;
 }
 
-.possiveis_andons{ /*configurações de possíveis andons*/
+select.possiveis_andons{ /*configurações de possíveis andons*/
     text-align: center;
     padding: 2px;
     width: 380px;
     margin-bottom: 10px;
 }
 
-.possiveis_andons:hover{
+select.possiveis_andons:hover{
     cursor: pointer;
 }
 
